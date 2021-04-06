@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotationArroundSun : MonoBehaviour
+public class Planet : MonoBehaviour
 {
     public float radius = 5;
     public float speed = 2;
@@ -23,5 +23,6 @@ public class RotationArroundSun : MonoBehaviour
         v3.x = radius * Mathf.Cos(angle);
         v3.z = radius * Mathf.Sin(angle);
         transform.position = v3;
+        transform.Rotate(0, speed * Time.deltaTime, 0, Space.World);
     }
 }

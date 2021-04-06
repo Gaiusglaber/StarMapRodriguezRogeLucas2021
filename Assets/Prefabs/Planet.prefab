@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 747069963046509945}
   - component: {fileID: 2002042688127334392}
   - component: {fileID: 5285957998297729292}
+  - component: {fileID: 6444312846527300663}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -93,3 +94,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6444312846527300663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214231354094438831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09bf0a3e2730434e8f1efdaaf7f3da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  speed: 2
+  angle: 0
