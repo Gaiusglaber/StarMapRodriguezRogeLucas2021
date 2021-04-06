@@ -9,10 +9,12 @@ public class Instantiate : MonoBehaviour
     public float time = 0;
     void Start()
     {
-        for (short i=0;i<10;i++)
+        for (short i=0;i<8;i++)
         {
-            GameObject instantiator = Instantiate(planetPrefab, new Vector3(i * 20, 0, 0), Quaternion.identity).gameObject;
+            GameObject instantiator = Instantiate(planetPrefab, new Vector3(i * 200, 0, 0), Quaternion.identity).gameObject;
+
             Planet planetaux = instantiator.GetComponent<Planet>();
+            planetaux.radius = i * 300;
             gerenatedPlanets.Add(planetaux);
         }
     }
